@@ -1,0 +1,7 @@
+<snippet>
+	<description>assert define</description>
+	<content><![CDATA[ASSERT_${1:property_name}: assert property(${1:property_name}) ;
+]]></content>
+	<tabTrigger>assert</tabTrigger>
+	<scope>source.systemverilog</scope>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+	<description>assert print</description>
+	<content><![CDATA[ASSERT_${1:property_name}: assert property(${1:property_name}) 
+	\$display("assert property ${1} passed.") ; 
+else 
+	\$display("assert property ${1} failed.") ;
+]]></content>
+	<tabTrigger>assert</tabTrigger>
+	<scope>source.systemverilog</scope>
+</snippet>

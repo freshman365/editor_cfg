@@ -1,0 +1,9 @@
+<snippet>
+	<description>typedef enum</description>
+	<content><![CDATA[typedef enum logic [${1:signal_width} -1 :0] {
+	${3:enum_name} = 'd0 ,
+} ${2:enum_type_name}_e ;
+]]></content>
+	<tabTrigger>type</tabTrigger>
+	<scope>source.systemverilog</scope>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+	<description>typedef struct</description>
+	<content><![CDATA[typedef struct packed {
+	logic [${2:width} -1 :0] 		${3:signal_name} ;
+} ${1:struct_name}_s ; 
+]]></content>
+	<tabTrigger>type</tabTrigger>
+	<scope>source.systemverilog</scope>
+</snippet>

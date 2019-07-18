@@ -1,0 +1,10 @@
+<snippet>
+	<description>property define</description>
+	<content><![CDATA[property ${1:property_name};
+	@(posedge i_clk) disable iff (!i_rst) 
+	${2:property_expression} ;
+endproperty
+]]></content>
+	<tabTrigger>property</tabTrigger>
+	<scope>source.systemverilog</scope>
+</snippet>
