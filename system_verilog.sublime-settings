@@ -1,0 +1,11 @@
+{
+	// SystemVerilog Alignment configuration
+	"sv.one_decl_per_line"     	: true  , 	// When aligning signal declaration force only one signal per line
+
+	// SystemVerilog always block completion configuration
+	"sv.clk_name"           : "i_clk",    // Default clock name
+	"sv.rst_name"           : "i_rst",    // Default reset active high
+	"sv.rst_n_name"         : "i_rst_n",  // Default reset active low
+	"sv.always_label"       : false ,    // Enable label for always block (only if begin/end are present)
+
+}
