@@ -43,12 +43,14 @@ set cursorline
 
 "fold method
 set foldmethod=indent
+set nofoldenable
 "set foldlevel=99
 "set foldenable      " 允许折叠  
 
 " custom maps
 nmap qq :q<cr>
 nmap <c-d> yyp
+inoremap <c-d> <esc>yypi
 nmap <c-s> :w<cr>
 imap <c-s> <esc>:w<cr>
 nmap <c-h> <c-w>h
@@ -57,6 +59,10 @@ nmap <c-k> <c-w>k
 nmap <c-l> <c-w>l
 imap <c-up> <esc>ddkkpi
 imap <c-down> <esc>ddpi
+imap <c-enter> <esc>$a<enter>
+
+"complete path
+inoremap <c-f> <c-x><c-f>
 
 "nmap wm :WMToggle<cr>
 map <f2> :NERDTree<cr>
@@ -102,3 +108,6 @@ func SetTitle()
     "新建文件后，自动定位到文件末尾
     autocmd BufNewFile * normal G
 endfunc 
+
+" setting open directory as work directory.
+autocmd BufEnter * cd %:p:h
