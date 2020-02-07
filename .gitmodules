@@ -1,3 +1,6 @@
 [submodule "test"]
 	path = test
 	url = https://github.com/freshman365/test.git
+[submodule "sub_dir/test"]
+	path = sub_dir/test
+	url = https://github.com/freshman365/test.git
